@@ -62,7 +62,7 @@ button {
 ===================================================== */
 
 .navbar {
-    position: absolute;
+    position: sticky;
     width: 100%;
     top: 0;
     left: 0;
@@ -262,6 +262,10 @@ button {
 
 .mobile-nav {
     display: none;
+}
+
+.mobile-nav.open {
+    display: flex;
 }
 
 
@@ -5359,4 +5363,29 @@ button {
 
 .contact-link:hover strong {
     color: var(--gold);
+}
+
+@media (max-width: 768px) {
+
+    .student-image {
+        position: relative;
+        right: auto;
+        top: auto;
+
+        width: 90%;
+        max-width: 360px;
+        height: 320px;
+
+        margin: 30px auto 0;
+
+        border-radius: 50% 50% 28% 28%;
+    }
+
+    .student-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
 }
