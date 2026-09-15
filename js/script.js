@@ -9,7 +9,7 @@ document.getElementById("enquiryForm").addEventListener("submit", function (even
     const message = document.getElementById("message").value.trim();
 
     const whatsappMessage =
-        `Hello Saraswati Classes,\n\n` +
+        `Hello Saraswati Abacus & Vedic Classes,\n\n` +
         `I would like to make an enquiry.\n\n` +
         `Parent / Guardian Name: ${parentName}\n` +
         `Contact Number: ${phone}\n` +

@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Abacus Classes in Ambegaon BK, Pune | Saraswati Classes</title>
+<meta name="description" content="Join Abacus classes for ages 4–14 at Saraswati Classes in Ambegaon BK, Katraj, Pune. Improve concentration, memory, calculation speed and accuracy with offline and online learning.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">    
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        :root {
+            --navy: #0d326d;
+            --navy-dark: #082553;
+            --gold: #f5b51b;
+            --cream: #fffaf0;
+            --soft: #f5f8fc;
+            --text: #18253a;
+            --muted: #667085;
+            --white: #ffffff;
+        }
+
+        * { box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            margin: 0;
+            background: var(--cream);
+            color: var(--text);
+            font-family: "DM Sans", sans-serif;
+        }
+
+        a { text-decoration: none; }
+
+        .abacus-page { overflow: hidden; }
+
+        /* HERO */
+        .abacus-hero {
+            position: relative;
+            min-height: auto;
+            padding: 60px 7% 25px;
+            background:
+                radial-gradient(circle at 86% 18%, rgba(245,181,27,.18), transparent 25%),
+                linear-gradient(135deg, #fffaf0 0%, #f5f8fc 100%);
+        }
+
+        .abacus-hero-container {
+            position: relative;
+            z-index: 2;
+            max-width: 1180px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1.05fr .95fr;
+            gap: 65px;
+            align-items: center;
+        }
+
+        .abacus-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: #b47b00;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            margin-bottom: 22px;
+        }
+
+        .abacus-label span {
+            width: 35px;
+            height: 2px;
+            background: var(--gold);
+        }
+
+        .abacus-hero h1 {
+            margin: 0;
+            color: var(--navy);
+            font-family: "Playfair Display", serif;
+            font-size: clamp(50px, 6vw, 80px);
+            line-height: .98;
+            letter-spacing: -2px;
+        }
+
+        .abacus-hero h1 em {
+            color: var(--gold);
+            font-style: normal;
+        }
+
+        .abacus-hero-text {
+            max-width: 650px;
+            margin: 28px 0;
+            color: #526078;
+            font-size: 18px;
+            line-height: 1.75;
+        }
+
+        .abacus-hero-text strong { color: var(--navy); }
+
+    
+
+        .abacus-hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .abacus-primary-btn,
+        .abacus-secondary-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            min-height: 52px;
+            padding: 0 22px;
+            border-radius: 6px;
+            font-weight: 700;
+            transition: .25s ease;
+        }
+
+        .abacus-primary-btn {
+            background: var(--gold);
+            color: #13223b;
+        }
+
+        .abacus-primary-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(245,181,27,.25);
+        }
+
+        .abacus-secondary-btn {
+            border: 1px solid rgba(13,50,109,.18);
+            color: var(--navy);
+            background: #fff;
+        }
+
+        .abacus-secondary-btn:hover {
+            transform: translateY(-3px);
+            border-color: var(--navy);
+        }
+
+        /* ABACUS VISUAL */
+        .abacus-visual {
+            min-height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .abacus-card {
+            position: relative;
+            width: min(100%, 470px);
+            min-height: 390px;
+            padding: 38px;
+            border-radius: 28px;
+            background: var(--navy);
+            box-shadow: 0 30px 70px rgba(13,50,109,.22);
+            overflow: hidden;
+        }
+
+        .abacus-card::before {
+            content: "";
+            position: absolute;
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            background: rgba(245,181,27,.16);
+            top: -90px;
+            right: -70px;
+        }
+
+        .abacus-card-top {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+        }
+
+        .abacus-card-top i {
+            width: 62px;
+            height: 62px;
+            display: grid;
+            place-items: center;
+            border-radius: 16px;
+            background: var(--gold);
+            color: var(--navy);
+            font-size: 27px;
+        }
+
+        .abacus-card-top span {
+            font-size: 11px;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        .abacus-card h2 {
+            position: relative;
+            z-index: 2;
+            margin: 48px 0 10px;
+            color: white;
+            font-family: "Playfair Display", serif;
+            font-size: 48px;
+            line-height: 1;
+        }
+
+        .abacus-card p {
+            position: relative;
+            z-index: 2;
+            color: rgba(255,255,255,.72);
+            line-height: 1.7;
+            margin-bottom: 28px;
+        }
+
+        .abacus-rods {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            gap: 15px;
+            margin-top: 28px;
+        }
+
+        .rod {
+            height: 5px;
+            border-radius: 10px;
+            background: rgba(255,255,255,.65);
+            position: relative;
+        }
+
+        .beads {
+            position: absolute;
+            top: -12px;
+            left: 24%;
+            display: flex;
+            gap: 9px;
+        }
+
+        .beads i {
+            width: 28px;
+            height: 28px;
+            display: block;
+            border-radius: 50%;
+            background: var(--gold);
+            box-shadow: inset -4px -4px 0 rgba(0,0,0,.08);
+        }
+
+        .beads i:nth-child(2) { transform: translateX(14px); }
+        .beads i:nth-child(3) { transform: translateX(28px); }
+        .beads i:nth-child(4) { transform: translateX(42px); }
+
+       
+   .quick-info {
+    background: var(--navy);
+    color: var(--white);
+}
+
+.quick-grid {
+    max-width: 1180px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.quick-item {
+    min-height: 90px;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    border-right: 1px solid rgba(255,255,255,.12);
+}
+
+.quick-item:last-child {
+    border-right: none;
+}
+
+.quick-item > i {
+    color: var(--gold);
+    font-size: 22px;
+}
+
+.quick-item strong {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.quick-item span {
+    color: rgba(255,255,255,.62);
+    font-size: 13px;
+} 
+
+        /* GENERAL SECTIONS */
+        .abacus-section {
+    padding: 45px 7% 100px;
+}
+
+        .abacus-section-inner {
+            max-width: 1180px;
+            margin: auto;
+        }
+
+        .abacus-section-heading {
+            max-width: 700px;
+            margin-bottom: 48px;
+        }
+
+        .abacus-section-heading .mini {
+            color: #b47b00;
+            font-size: 11px;
+            letter-spacing: 3px;
+            font-weight: 700;
+        }
+
+        .abacus-section-heading h2 {
+            margin: 12px 0;
+            color: var(--navy);
+            font-family: "Playfair Display", serif;
+            font-size: clamp(38px, 4vw, 58px);
+            line-height: 1.08;
+        }
+
+        .abacus-section-heading p {
+            color: var(--muted);
+            line-height: 1.75;
+            font-size: 16px;
+        }
+
+        /* ABOUT ABACUS */
+
+.abacus-about {
+    background: var(--white);
+}
+
+.about-abacus-grid {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.about-abacus-text {
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.about-abacus-text p {
+    margin: 0 0 20px;
+}
+
+.about-abacus-text strong {
+    color: var(--navy);
+}
+
+.about-abacus-points {
+    display: grid;
+    gap: 18px;
+}
+
+.about-point {
+    display: flex;
+    gap: 18px;
+    padding: 22px;
+    background: var(--soft);
+    border: 1px solid #e6ebf2;
+    border-radius: 18px;
+    transition: .25s ease;
+}
+
+.about-point:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(13,50,109,.08);
+}
+
+.about-point > i {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border-radius: 13px;
+    background: #fff4cf;
+    color: #b47b00;
+    font-size: 19px;
+}
+
+.about-point h3 {
+    margin: 0 0 6px;
+    color: var(--navy);
+    font-size: 18px;
+}
+
+.about-point p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
+/* ================= 8-LEVEL CURRICULUM ================= */
+
+.curriculum-section {
+    background: var(--soft);
+}
+
+.curriculum-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 45px;
+}
+
+.curriculum-card {
+    background: var(--white);
+    border: 1px solid #e6ebf2;
+    border-radius: 18px;
+    padding: 28px 24px;
+    text-align: center;
+    transition: 0.25s ease;
+}
+
+.curriculum-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(13, 50, 109, 0.09);
+}
+
+.curriculum-card span {
+    display: block;
+    color: #b47b00;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.curriculum-card h3 {
+    margin: 0;
+    color: var(--navy);
+    font-size: 20px;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .curriculum-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .curriculum-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .curriculum-card {
+        padding: 24px 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-abacus-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+}
+
+        /* BENEFITS */
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .benefit-card {
+            padding: 30px;
+            min-height: 205px;
+            border: 1px solid #e7eaf0;
+            border-radius: 18px;
+            background: white;
+            transition: .25s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 40px rgba(13,50,109,.09);
+        }
+
+        .benefit-icon {
+            width: 50px;
+            height: 50px;
+            display: grid;
+            place-items: center;
+            border-radius: 13px;
+            background: #fff4cf;
+            color: #b47b00;
+            font-size: 20px;
+            margin-bottom: 22px;
+        }
+
+        .benefit-card h3 {
+            margin: 0 0 10px;
+            color: var(--navy);
+            font-size: 20px;
+        }
+
+        .benefit-card p {
+            margin: 0;
+            color: var(--muted);
+            line-height: 1.65;
+            font-size: 14px;
+        }
+
+        /* PROCESS */
+        .abacus-process { background: var(--soft); }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .process-card {
+            padding: 34px;
+            background: white;
+            border-radius: 18px;
+            border: 1px solid #e6ebf2;
+        }
+
+        .process-number {
+            color: var(--gold);
+            font-family: "Playfair Display", serif;
+            font-size: 38px;
+            font-weight: 700;
+        }
+
+        .process-card h3 {
+            color: var(--navy);
+            margin: 18px 0 10px;
+        }
+
+        .process-card p {
+            color: var(--muted);
+            line-height: 1.7;
+            font-size: 14px;
+            margin: 0;
+        }
+        /* TEACHER TRAINING */
+
+.teacher-training {
+    background: var(--soft);
+}
+
+.teacher-training-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.teacher-training-content .mini {
+    color: #b47b00;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.teacher-training-content h2 {
+    margin: 14px 0 20px;
+    color: var(--navy);
+    font-family: "Playfair Display", serif;
+    font-size: clamp(38px, 4vw, 56px);
+    line-height: 1.08;
+}
+
+.teacher-training-content h2 em {
+    color: var(--gold);
+    font-style: normal;
+}
+
+.teacher-training-content > p {
+    max-width: 580px;
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.75;
+    margin: 0 0 28px;
+}
+
+.teacher-training-points {
+    display: grid;
+    gap: 14px;
+}
+
+.teacher-point {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--navy);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.teacher-point i {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: #fff4cf;
+    color: #b47b00;
+}
+
+
+/* ENQUIRY CARD */
+
+.teacher-enquiry-card {
+    background: var(--white);
+    padding: 34px;
+    border-radius: 22px;
+    border: 1px solid #e6ebf2;
+    box-shadow: 0 18px 40px rgba(13,50,109,.08);
+}
+
+.form-label {
+    color: #b47b00;
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+}
+
+.teacher-enquiry-card h3 {
+    margin: 10px 0 8px;
+    color: var(--navy);
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+}
+
+.teacher-enquiry-card > p {
+    margin: 0 0 24px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.teacher-enquiry-card form {
+    display: grid;
+    gap: 16px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.form-group {
+    display: grid;
+    gap: 7px;
+}
+
+.form-group label {
+    color: var(--navy);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.form-group input {
+    width: 100%;
+    height: 46px;
+    padding: 0 14px;
+    border: 1px solid #dfe5ed;
+    border-radius: 10px;
+    background: #fbfcfe;
+    color: var(--text);
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: .25s ease;
+}
+
+.form-group input:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(245,181,27,.12);
+}
+
+.form-group input::placeholder {
+    color: #98a2b3;
+}
+
+.teacher-submit-btn {
+    min-height: 50px;
+    margin-top: 4px;
+    border: 0;
+    border-radius: 8px;
+    background: var(--gold);
+    color: #13223b;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .25s ease;
+}
+
+.teacher-submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(245,181,27,.25);
+}
+
+@media (max-width: 900px) {
+
+    .teacher-training-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .teacher-enquiry-card {
+        padding: 25px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+        /* CTA */
+        .abacus-cta {
+            padding: 90px 7%;
+            background: var(--navy);
+        }
+
+        .abacus-cta-inner {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .abacus-cta-inner > span {
+            color: var(--gold);
+            font-size: 11px;
+            letter-spacing: 3px;
+            font-weight: 700;
+        }
+
+        .abacus-cta h2 {
+            margin: 14px 0;
+            color: white;
+            font-family: "Playfair Display", serif;
+            font-size: clamp(38px, 5vw, 60px);
+        }
+
+        .abacus-cta p {
+            max-width: 650px;
+            margin: 0 auto 28px;
+            color: rgba(255,255,255,.7);
+            line-height: 1.7;
+        }
+
+        /* FOOTER */
+        .abacus-footer {
+            background: #061b3e;
+            color: rgba(255,255,255,.65);
+            padding: 28px 7%;
+        }
+
+        .abacus-footer-inner {
+            max-width: 1180px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            font-size: 13px;
+        }
+
+        .abacus-footer a { color: white; }
+
+        /* MOBILE */
+        @media (max-width: 900px) {
+            .quick-grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.quick-item {
+    padding: 20px 15px;
+    gap: 11px;
+    border-bottom: 1px solid rgba(255,255,255,0.10);
+}
+
+.quick-item:nth-child(2n) {
+    border-right: none;
+}
+
+.quick-item:nth-child(3),
+.quick-item:nth-child(4) {
+    border-bottom: none;
+}
+
+.quick-item > i {
+    font-size: 19px;
+}
+
+.quick-item strong {
+    font-size: 12px;
+}
+
+.quick-item span {
+    font-size: 10px;
+}
+            .abacus-hero-container {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .abacus-visual { min-height: 390px; }
+
+            .abacus-info-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .benefit-grid,
+            .process-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .abacus-hero {
+                padding: 80px 6% 65px;
+            }
+
+            .abacus-hero h1 { font-size: 50px; }
+
+            .abacus-hero-text { font-size: 16px; }
+
+            .abacus-card {
+                padding: 28px;
+                min-height: 350px;
+            }
+
+            .abacus-card h2 { font-size: 40px; }
+
+            .abacus-info-grid,
+            .benefit-grid,
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+           
+
+
+            .abacus-section { padding: 70px 6%; }
+
+            .abacus-hero-buttons { flex-direction: column; }
+
+            .abacus-primary-btn,
+            .abacus-secondary-btn { width: 100%; }
+
+            .abacus-footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="index.html" class="brand">
+                <div class="brand-mark">
+                    <span>S</span>
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <div class="brand-text">
+                    <h2>SARASWATI</h2>
+                    <span>CLASSES</span>
+                    <small>Learn • Grow • Excel</small>
+                </div>
+            </a>
+
+            <nav class="desktop-nav">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#programs" class="active">Programs</a>
+                <a href="index.html#faculty">Faculty</a>
+                <a href="index.html#gallery">Gallery</a>
+                <a href="index.html#contact">Contact</a>
+
+                <a href="index.html#contact" class="nav-cta">
+                    Enquire Now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </nav>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div class="mobile-nav" id="mobileNav">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#programs">Programs</a>
+            <a href="index.html#faculty">Faculty</a>
+            <a href="index.html#gallery">Gallery</a>
+            <a href="index.html#contact">Contact</a>
+
+            <a href="index.html#contact" class="mobile-cta">
+                Enquire Now
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </header>
+
+    <main class="abacus-page">
+
+        <!-- ================= HERO ================= -->
+
+        <section class="abacus-hero">
+
+            <div class="abacus-hero-container">
+
+                <div>
+                    <div class="abacus-label">
+                        <span></span>
+                        ABACUS PROGRAM
+                    </div>
+
+                    <h1>
+                        Build Focus.<br>
+                        <em>Calculate Faster.</em>
+                    </h1>
+
+                    <p class="abacus-hero-text">
+                        A skill-building Abacus program for children
+                        <strong>ages 4–14</strong>, designed to support
+                        concentration, memory, calculation speed and
+                        accuracy through regular practice.
+                    </p>
+
+                   
+
+                    <div class="abacus-hero-buttons">
+                        <a href="index.html#contact" class="abacus-primary-btn">
+                            Enquire for Abacus
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="#benefits" class="abacus-secondary-btn">
+                            Explore the Program
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="abacus-visual">
+
+                    <div class="abacus-card">
+
+                        <div class="abacus-card-top">
+                            <i class="fa-solid fa-calculator"></i>
+                            <span>SKILL • PRACTICE • GROW</span>
+                        </div>
+
+                        <h2>Abacus<br>Learning</h2>
+
+                        <p>
+                            Learn through structured practice and
+                            engaging calculation activities.
+                        </p>
+
+                        <div class="abacus-rods">
+
+                            <div class="rod">
+                                <div class="beads">
+                                    <i></i><i></i><i></i><i></i>
+                                </div>
+                            </div>
+
+                            <div class="rod">
+                                <div class="beads">
+                                    <i></i><i></i><i></i>
+                                </div>
+                            </div>
+
+                            <div class="rod">
+                                <div class="beads">
+                                    <i></i><i></i><i></i><i></i>
+                                </div>
+                            </div>
+
+                            <div class="rod">
+                                <div class="beads">
+                                    <i></i><i></i><i></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+<section class="quick-info">
+
+    <div class="container">
+
+        <div class="quick-grid">
+
+            <div class="quick-item">
+                <i class="fa-solid fa-child"></i>
+                <div>
+                    <strong>Age 4–14</strong>
+                    <span>For Children</span>
+                </div>
+            </div>
+
+            <div class="quick-item">
+                <i class="fa-regular fa-calendar"></i>
+                <div>
+                    <strong>Thu & Fri</strong>
+                    <span>Weekday Classes</span>
+                </div>
+            </div>
+
+            <div class="quick-item">
+                <i class="fa-solid fa-clock"></i>
+                <div>
+                    <strong>1–1.5 Hours</strong>
+                    <span>Each Session</span>
+                </div>
+            </div>
+
+            <div class="quick-item">
+                <i class="fa-solid fa-laptop"></i>
+                <div>
+                    <strong>Online + Offline</strong>
+                    <span>Flexible Learning</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+       
+
+        <!-- ================= ABOUT ABACUS ================= -->
+
+<section class="abacus-section abacus-about">
+
+    <div class="abacus-section-inner">
+
+        <div class="abacus-section-heading">
+            <span class="mini">ABOUT ABACUS</span>
+
+            <h2>
+                Building stronger
+                <em>number skills.</em>
+            </h2>
+
+            <p>
+                Abacus learning introduces children to a structured way of
+                working with numbers through guided practice and calculation
+                activities.
+            </p>
+        </div>
+
+        <div class="about-abacus-grid">
+
+            <div class="about-abacus-text">
+
+                <p>
+                    The program is designed for children <strong>ages 4–14</strong>
+                    and focuses on developing familiarity with numbers,
+                    concentration, memory, calculation speed and accuracy.
+                </p>
+
+                <p>
+                    Through regular practice, students gradually become more
+                    comfortable working with calculations and build confidence
+                    in handling numbers.
+                </p>
+
+            </div>
+
+            <div class="about-abacus-points">
+
+                <div class="about-point">
+                    <i class="fa-solid fa-calculator"></i>
+                    <div>
+                        <h3>Learn with Numbers</h3>
+                        <p>Structured activities help children practise calculation skills.</p>
+                    </div>
+                </div>
+
+                <div class="about-point">
+                    <i class="fa-solid fa-brain"></i>
+                    <div>
+                        <h3>Develop Learning Skills</h3>
+                        <p>Regular practice can support concentration, memory and confidence.</p>
+                    </div>
+                </div>
+
+                <div class="about-point">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <div>
+                        <h3>Improve with Practice</h3>
+                        <p>Students gradually work towards greater speed and accuracy.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= 8-LEVEL CURRICULUM ================= -->
+
+<section class="abacus-section curriculum-section">
+
+    <div class="abacus-section-inner">
+
+        <div class="abacus-section-heading">
+            <span class="mini">OUR CURRICULUM</span>
+
+            <h2>
+                Structured
+                <em>8-Level Curriculum</em>
+            </h2>
+
+            <p>
+                Designed for steady growth in speed, accuracy, and confidence.
+            </p>
+        </div>
+
+        <div class="curriculum-grid">
+
+            <div class="curriculum-card">
+                <span>LEVEL 1–2</span>
+                <h3>Fundamentals</h3>
+            </div>
+
+            <div class="curriculum-card">
+                <span>LEVEL 3–4</span>
+                <h3>Speed + Accuracy</h3>
+            </div>
+
+            <div class="curriculum-card">
+                <span>LEVEL 5–6</span>
+                <h3>Division + Mixed</h3>
+            </div>
+
+            <div class="curriculum-card">
+                <span>LEVEL 7–8</span>
+                <h3>Mastery</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+        <!-- ================= BENEFITS ================= -->
+
+        <section class="abacus-section" id="benefits">
+
+            <div class="abacus-section-inner">
+
+                <div class="abacus-section-heading">
+                    <span class="mini">WHAT STUDENTS CAN DEVELOP</span>
+
+                    <h2>
+                        Skills that go beyond
+                        the calculation.
+                    </h2>
+
+                    <p>
+                        Abacus learning combines calculation practice
+                        with activities that can help students develop
+                        useful learning skills.
+                    </p>
+                </div>
+
+                <div class="benefit-grid">
+
+                    <article class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3>Concentration</h3>
+                        <p>
+                            Practice activities encourage students to
+                            stay focused while working through calculations.
+                        </p>
+                    </article>
+
+                    <article class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3>Memory</h3>
+                        <p>
+                            Regular practice can support the ability to
+                            remember and apply calculation techniques.
+                        </p>
+                    </article>
+
+                    <article class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3>Calculation Speed</h3>
+                        <p>
+                            Students practise structured methods that
+                            can help them become quicker with calculations.
+                        </p>
+                    </article>
+
+                    <article class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <h3>Accuracy</h3>
+                        <p>
+                            Repeated practice helps students work carefully
+                            and become more comfortable with calculations.
+                        </p>
+                    </article>
+
+                    <article class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-calculator"></i>
+                        </div>
+                        <h3>Mental Calculation</h3>
+                        <p>
+                            Learning activities introduce techniques for
+                            thinking through calculations with greater ease.
+                        </p>
+                    </article>
+
+                    <article class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <h3>Confidence</h3>
+                        <p>
+                            Consistent practice can help students feel more
+                            comfortable and confident with numbers.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+       
+
+        <!-- ================= WHO CAN JOIN ================= -->
+
+        <section class="abacus-section">
+
+            <div class="abacus-section-inner">
+
+                <div class="abacus-section-heading">
+                    <span class="mini">WHO CAN JOIN</span>
+
+                    <h2>
+                        A program for
+                        growing learners.
+                    </h2>
+
+                    <p>
+                        The Abacus program is suitable for children
+                        between <strong>4 and 14 years</strong>. Learning
+                        activities can be adapted to the student's level
+                        and regular practice routine.
+                    </p>
+                </div>
+
+                <div class="benefit-grid">
+
+                    <article class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-child"></i>
+                        </div>
+                        <h3>Ages 4–6</h3>
+                        <p>
+                            Early number familiarity, simple activities
+                            and guided practice.
+                        </p>
+                    </article>
+
+                    <article class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Ages 7–9</h3>
+                        <p>
+                            Regular calculation practice with increasing
+                            familiarity and confidence.
+                        </p>
+                    </article>
+
+                    <article class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3>Ages 10–14</h3>
+                        <p>
+                            Continued practice focused on calculation,
+                            speed, accuracy and confidence.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+<!-- ================= TEACHER TRAINING ================= -->
+
+<section class="abacus-section teacher-training" id="teacher-training">
+    <div class="abacus-section-inner">
+
+        <div class="teacher-training-grid">
+
+            <div class="teacher-training-content">
+
+                <span class="mini">FOR TEACHERS</span>
+
+                <h2>
+                    Become a
+                    <em>certified Abacus teacher.</em>
+                </h2>
+
+                <p>
+                    We provide training, resources and ongoing support to
+                    help you learn Abacus teaching methods and confidently
+                    guide students.
+                </p>
+
+                <div class="teacher-training-points">
+
+                    <div class="teacher-point">
+                        <i class="fa-solid fa-certificate"></i>
+                        <span>Abacus teacher training</span>
+                    </div>
+
+                    <div class="teacher-point">
+                        <i class="fa-solid fa-book-open"></i>
+                        <span>Teaching resources and guidance</span>
+                    </div>
+
+                    <div class="teacher-point">
+                        <i class="fa-solid fa-headset"></i>
+                        <span>Ongoing support</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="teacher-enquiry-card">
+
+                <span class="form-label">TEACHER ENQUIRY</span>
+
+                <h3>Interested in teacher training?</h3>
+
+                <p>
+                    Share your details and we will get in touch with you.
+                </p>
+
+                <form id="teacherEnquiryForm">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="teacherName">Name</label>
+                            <input
+                                type="text"
+                                id="teacherName"
+                                name="name"
+                                placeholder="Your name"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="teacherPhone">Phone</label>
+                            <input
+                                type="tel"
+                                id="teacherPhone"
+                                name="phone"
+                                placeholder="Your phone number"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="teacherEmail">Email</label>
+                        <input
+                            type="email"
+                            id="teacherEmail"
+                            name="email"
+                            placeholder="Your email address"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="teacherCity">City</label>
+                        <input
+                            type="text"
+                            id="teacherCity"
+                            name="city"
+                            placeholder="Your city"
+                        >
+                    </div>
+
+                    <button type="submit" class="teacher-submit-btn">
+                        Enquire About Training
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+        <!-- ================= CTA ================= -->
+
+        <section class="abacus-cta">
+
+            <div class="abacus-cta-inner">
+
+                <span>ABACUS • AGES 4–14</span>
+
+                <h2>
+                    Ready to explore Abacus learning?
+                </h2>
+
+                <p>
+                    Get in touch to know more about the Abacus program,
+                    class timings and learning options at Saraswati
+                    Abacus & Vedic Classes.
+                </p>
+
+                <a href="index.html#contact" class="abacus-primary-btn">
+                    Enquire for Abacus
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="abacus-footer">
+        <div class="abacus-footer-inner">
+            <span>© 2026 Saraswati Abacus & Vedic Classes.</span>
+
+            <a href="index.html">
+                Back to Saraswati Classes
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileNav = document.getElementById("mobileNav");
+
+        if (menuBtn && mobileNav) {
+            menuBtn.addEventListener("click", () => {
+                mobileNav.classList.toggle("open");
+
+                if (mobileNav.classList.contains("open")) {
+                    menuBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+                    menuBtn.setAttribute("aria-label", "Close menu");
+                } else {
+                    menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+                    menuBtn.setAttribute("aria-label", "Open menu");
+                }
+            });
+
+            mobileNav.querySelectorAll("a").forEach(link => {
+                link.addEventListener("click", () => {
+                    mobileNav.classList.remove("open");
+                    menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+                    menuBtn.setAttribute("aria-label", "Open menu");
+                });
+            });
+        }
+// ================= TEACHER WHATSAPP ENQUIRY =================
+
+const teacherEnquiryForm = document.getElementById("teacherEnquiryForm");
+
+if (teacherEnquiryForm) {
+
+    teacherEnquiryForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        const name = document.getElementById("teacherName").value.trim();
+        const phone = document.getElementById("teacherPhone").value.trim();
+        const email = document.getElementById("teacherEmail").value.trim();
+        const city = document.getElementById("teacherCity").value.trim();
+
+        const message =
+            "Hello, I am interested in Abacus teacher training.\n\n" +
+            "Name: " + name + "\n" +
+            "Phone: " + phone + "\n" +
+            "Email: " + (email || "Not provided") + "\n" +
+            "City: " + (city || "Not provided");
+
+        const whatsappNumber = "917219217005";
+
+        const whatsappURL =
+            "https://wa.me/" +
+            whatsappNumber +
+            "?text=" +
+            encodeURIComponent(message);
+
+        window.open(whatsappURL, "_blank");
+
+    });
+
+}
+
+    </script>
+
+</body>
+</html>
