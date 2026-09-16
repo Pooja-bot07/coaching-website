@@ -777,23 +777,46 @@
         }
 
         /* FOOTER */
-        .abacus-footer {
-            background: #061b3e;
-            color: rgba(255,255,255,.65);
-            padding: 28px 7%;
-        }
+       
 
-        .abacus-footer-inner {
-            max-width: 1180px;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-            font-size: 13px;
-        }
+         .simple-footer {
+    background: #061b3e;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 22px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
 
-        .abacus-footer a { color: white; }
+.simple-footer p {
+    margin: 0;
+    font-size: 13px;
+}
+
+.back-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffe08a;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.back-home:hover {
+    color: var(--gold);
+    transform: translateX(-3px);
+}
+
+@media (max-width: 600px) {
+    .simple-footer {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
 
         /* MOBILE */
         @media (max-width: 900px) {
@@ -909,6 +932,7 @@
                 <a href="index.html#about">About</a>
                 <a href="index.html#programs" class="active">Programs</a>
                 <a href="index.html#faculty">Faculty</a>
+                <a href="#growth">Skills & Growth</a>
                 <a href="index.html#gallery">Gallery</a>
                 <a href="index.html#contact">Contact</a>
 
@@ -928,6 +952,7 @@
             <a href="index.html#about">About</a>
             <a href="index.html#programs">Programs</a>
             <a href="index.html#faculty">Faculty</a>
+            <a href="#growth">Skills & Growth</a>
             <a href="index.html#gallery">Gallery</a>
             <a href="index.html#contact">Contact</a>
 
@@ -1491,16 +1516,14 @@
 
     <!-- ================= FOOTER ================= -->
 
-    <footer class="abacus-footer">
-        <div class="abacus-footer-inner">
-            <span>© 2026 Saraswati Abacus & Vedic Classes.</span>
+        <footer class="simple-footer">
+    <p>© 2026 Saraswati Abacus & Vedic Classes.</p>
 
-            <a href="index.html">
-                Back to Saraswati Classes
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-        </div>
-    </footer>
+    <a href="index.html" class="back-home">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back to Saraswati Classes
+    </a>
+</footer>
 
     <script>
         const menuBtn = document.getElementById("menuBtn");
