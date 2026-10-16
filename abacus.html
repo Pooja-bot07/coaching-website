@@ -904,6 +904,35 @@
                 text-align: center;
             }
         }
+
+.page-developer-credit {
+  text-align: center;
+  color: #cbd7e8;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.page-developer-credit a {
+  color: #ffc02e;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 4px;
+  transition: color 0.3s ease;
+}
+
+.page-developer-credit a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .page-developer-credit {
+    width: 100%;
+    order: 3;
+    padding-top: 12px;
+  }
+}
+
     </style>
 </head>
 
@@ -1519,10 +1548,22 @@
         <footer class="simple-footer">
     <p>© 2026 Saraswati Abacus & Vedic Classes.</p>
 
+<div class="page-developer-credit">
+  Designed &amp; Developed by
+  <a
+    href="https://pooja-bot07.github.io/pooja-portfolio/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Pooja Malusare ↗
+  </a>
+</div>
+
     <a href="index.html" class="back-home">
         <i class="fa-solid fa-arrow-left"></i>
         Back to Saraswati Classes
     </a>
+    
 </footer>
 
     <script>
